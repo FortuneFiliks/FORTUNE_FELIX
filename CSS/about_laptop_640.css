@@ -1,0 +1,477 @@
+@media(min-width : 640px) and (hover : hover) and (pointer : fine){
+/****************************************************START****************************************************/
+	*{
+		padding : 0;
+		margin : 0;
+		box-sizing : border-box;
+		
+	}
+	:root{
+		--pri_color :#002875;
+		--sec_color :#7a0632;
+		--bg_color :#eff6ff;
+        overflow-y : visible !important;		
+	}
+	body{
+		margin : 0 0 0 0;
+		padding : 0 0 0 0;
+	}
+/*************************************TEXT ANIMATION*************************************/	
+
+    .char{
+        font-size: 4.5rem;
+        display: inline-block;
+        animation: an 1s ease-out 1 both;
+    	background : repeating-linear-gradient(to right,#AE8626,#F7EF8A,#D2AC47,#EDC967);
+    	-webkit-text-fill-color :transparent;
+    	background-clip : text;	
+    }	
+	
+	
+	
+    .char_animated{
+        animation: an 1s ease-out 1 both;		
+    }
+
+
+    @keyframes an{
+        from{
+            opacity: 0;
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+        }
+        to{
+            opacity: 1;
+            transform: perspective(500px) translate3d(0, 0, 0);
+        }
+    }
+/******************************MOBILE MENU******************************/
+	
+	.mobile_menu_section{ 
+		display : none !important;
+	}
+
+	
+	
+/******************************FIRST SECTION******************************/
+
+    #first_section{
+        width : 100%;
+    	min-height : 100dvh;
+    	min-height : 100vh;
+    	background : url("../IMAGES/abbe-sublett-nxZDMUQhN4o-unsplash.webp");
+    	background-size : cover;
+		overflow-x : hidden;
+		position : relative;
+    }
+    
+    #first_section .first_section_content{
+    	width : 100%;
+    	min-height : 100dvh;
+    	min-height : 100vh;
+        background : #090f21E5;
+    	/* padding : 100px 0 0 0; */
+    	color : #ffffff;
+    }
+        
+    #first_section .first_section_flex_right_item_flex{
+    	display : flex;
+    	min-height : 100dvh;
+    	min-height : 100vh;
+    	align-items : center;
+    	justify-content : right;
+		gap : 25px;
+		padding : 0 50px 0 0;
+    }
+    
+    #first_section .our_heading{
+    	font-size : 7rem;
+    	font-weight : 800;
+    	font-family: Montserrat;
+    	display : inline-block;
+		transform : scaleY(0);
+		transform-origin:center;
+    }
+    
+    
+    #first_section .text_item{
+    	font-size : 2rem;
+    	
+    }
+
+    #first_section .protest-revolution{
+        font-family: "Protest Revolution", serif;
+        font-weight: 800;
+        font-size: 2rem;
+        font-style: normal;
+        padding-top: 10px;
+    }
+	
+/******************************FIRST SECTION ANIMATION******************************/
+
+
+    @keyframes our_heading_animation{
+		from{
+			transform : scaleY(0);
+		}
+		to{
+			
+			transform : scaleY(1.75);
+			
+		}
+		
+		
+	}
+	
+	.our_heading_animation_class{
+		animation-name : our_heading_animation;
+		animation-duration : 3s;
+		animation-fill-mode : forwards;
+	}
+	
+	
+	@keyframes other_text_animation{
+		from{
+			transform : translateX(40%);
+			opacity : 0;
+		}
+		to{
+			
+			transform : translateX(0);
+			opacity : 1;
+		}
+	}
+
+
+	.other_text_animation_class{
+		animation-name : other_text_animation;
+		animation-duration : 3s;
+		animation-fill-mode : forwards;
+	}
+	
+/******************************SECOND SECTION******************************/	
+	#second_section{
+		width : 100%;
+		min-height : auto;
+		background : #eff6ff;
+		overflow-x : hidden;
+		padding : 4rem 1rem 4rem 1rem;
+	}
+	
+	#second_section .second_section_content{
+		width : 100%;
+	}
+	
+	#second_section .second_section_flex{
+		display : flex;
+		flex-direction : column;
+		width : 100%;
+	}
+	
+	
+	
+	#second_section .second_section_flex_mid_item{
+		width : 100%;
+		position : relative;
+	}
+	#second_section .second_section_flex_right_item{
+		width : 100%;
+		padding : 0 0 0 0;
+		font-size : 1.2rem;
+		text-align : left;
+		font-family : open sans;
+		transform : translateX(40%);
+		opacity : 0;
+		margin : 375px 0 0 0;
+		color : #242f65;
+	}
+	
+	#second_section .profile_img{
+		width : 250px;
+		height : 313px;
+        /* Adjust the "20px" to control the slant size */
+        clip-path: polygon(
+          0 0%,  /* Top-left slant */
+          calc(100% - 20px) 0%, 
+          100% 0,/* Top-right slant */
+          100% calc(100% - 20px),
+          calc(100% - 20px) 100%,
+          0 100%, /* bottom-left slant */
+          0% calc(100% - 20px),
+          0% 20px /* bottom-right slant */
+        );
+		transform : translate(5%, 5%);
+		position : absolute;
+		border-radius : 10px;
+		left : 25%;
+	}
+	.profile_img_background{
+		width : 250px;
+		height : 313px;
+		position : absolute;
+        background :linear-gradient(to bottom, #e1af3b,#0047ab,#7a0632);
+        clip-path: polygon(
+          20px 0%,  /* Top-left slant */
+          calc(100% - 20px) 0%, 
+          100% 0,/* Top-right slant */
+          100% calc(100% - 20px),
+          calc(100% - 20px) 100%,
+          0 100%, /* bottom-left slant */
+          0% calc(100% - 20px),
+          0% 20px /* bottom-right slant */
+        );
+		border-radius : 10px;
+		border-radius : 10px;
+		left : 25%;
+	}
+
+	.second_section_heading{
+	   font-size : 3rem;
+	   color : #223a66;
+       font-weight : 600;
+	   padding : 0 0 30px 0;
+	   text-align : left;
+	}	
+
+
+/******************************THIRD SECTION******************************/
+
+	#third_section{
+		width : 100%;
+		min-height : auto;
+		background : #FFF6F5;
+		overflow-x : hidden;
+        padding : 4rem 0 4rem 0;		
+	}
+	
+	#third_section .third_section_content{
+		width : 100%;
+		/* padding : 50px 0 0 0; */
+	}
+	
+	#third_section .third_section_flex{
+		display : flex;
+		flex-direction : row;
+		align-items : center;
+		width : 90%;
+		gap : 50px;
+		margin-left : auto;
+		margin-right : auto;
+	}	
+	#third_section .third_section_flex_mid_item{
+		width : 50%;
+		font-size : 1.15rem;
+		margin : 0 0 0 0;
+		font-family : open sans;
+		transform : translateX(40%);
+		opacity : 0;		
+	}
+	#third_section .third_section_flex_right_item{
+		width : 50%;
+		margin : 0 0 0 0;
+	}
+
+	
+	.our_mission_flex{
+	   display : flex;
+	   flex-direction :row;
+	   align-items : center;
+	}
+	.our_mission_span{
+	   font-size : 4rem;
+	   color : #7a0632;		
+       font-weight : 600;		
+	}
+	
+	.our_mission_text{
+	   font-size : 2rem;
+	   color : #7a0632;		
+       font-weight : 600;
+	   text-align : right;
+	   padding : 0 50px 0 0;
+	}
+
+
+	#third_section .mission_img{
+		width : 100%;
+	    margin-left : 0;		
+		border-radius : 10px;
+		transform : scaleX(0);
+		transform-origin:center;
+	}
+
+    .chart_img{
+         height : 100px;
+         width : 100px;
+    }	
+	
+/******************************THIRD SECTION ANIMATION******************************/
+    @keyframes mission_img_animation{
+		from{
+			transform : scaleX(0);
+		}
+		to{
+			
+			transform : scaleX(1);
+			
+		}
+		
+		
+	}
+	
+	.mission_img_animation_class{
+		animation-name : mission_img_animation;
+		animation-duration : 3s;
+		animation-fill-mode : forwards;
+	}
+
+
+/******************************FOURTH SECTION******************************/
+    #fourth_section{
+		width : 100%;
+		min-height : auto;
+		min-height : auto;
+		background : #131a2a;
+        padding : 4rem 0 4rem 0;
+	}
+	
+	#fourth_section .fourth_section_content{
+		width : 90%;
+		margin-left : auto;
+		margin-right : auto;
+	}
+	
+
+		
+	.fourth_section_core{
+		color : #ffffff;
+		width : 100%;
+		margin-left : auto;
+		margin-right : auto;
+		font-size : 1.25rem;
+		
+	}
+	.fourth_section_heading{
+		font-weight : 700;
+		font-size : 2.5rem;
+		text-align : left;
+		padding : 25px 0 25px 0;
+		color : #ffffff;
+	}
+
+	.fourth_section_flex_item{
+		display : flex;
+		flex-direction : column;
+		align-items : center;
+	}
+	.principles{
+		color : #FFDE92;
+		font-weight : 600;
+		font-size : 1.25rem;
+	}
+	.approach_heading{
+		font-size : 1.75rem;
+		font-weight : 600;
+		padding : 50px 0 15px 0;
+	}
+	
+/******************************FIFTH SECTION******************************/	
+	#fifth_section{
+		width : 100%;
+		min-height : 140dvh;
+		min-height : 140vh;
+		background : radial-gradient(#0c253f,#090f21,#0d0a0b);
+		color : #ffffff;
+		position : relative;
+		overflow-x : hidden;
+		padding : 3rem 0 0 0;
+		
+	}
+	.fifth_section_content{
+		width : 100%;
+	}
+	
+	
+	.fifth_section_flex_heading{
+		display : flex;
+		align-items : center;
+	}
+	
+	
+	.fifth_section_heading{
+		color : #ffffff;
+		font-weight : 600;
+		padding : 0 25px 50px 0;
+		text-align : right;
+		font-size : 2.5rem;
+	}
+	
+	.fifth_section_slide_item{
+		width : 85%;
+		left : 7.5%;
+		border : solid 2px #ffffff;
+		border-radius : 5px;
+		padding : 25px 25px 25px 25px;
+		position : absolute;
+		display : inline-block;
+		font-size : 1rem;
+	}
+	
+	.nav_indicators{
+		position : absolute;
+		left : 37.5%;
+		top : 12.5%;
+	}
+	
+	.strategy_pointer_flex{
+		display : flex;
+	}
+	.strategy_pointer{
+        width : 40px;
+		height : 40px;
+		border-radius : 100%;
+		border : solid 2px #ffffff;
+		margin : 0 10px 0 10px;
+		position : relative;
+		box-sizing : content-box;
+	}
+
+    .activator{
+		width : 20px;
+		height : 20px;
+		background : #ffffff;
+		border-radius : 100%;
+		position : absolute;
+		top : 10px;
+		left : 10px;
+		box-sizing : content-box;
+	}
+	
+	.next_btn{
+	    position : absolute;
+		top : 50%;
+		right : 3%;
+		cursor : pointer;
+	}
+	
+	.prev_btn{
+	    position : absolute;
+		top : 50%;
+		left : 3%;
+		cursor : pointer;
+	}
+	.fa-chevron-right, .fa-chevron-left{
+		color : #ffffff;
+		font-size : 2rem;
+	}
+	
+	.item_heading{
+		text-decoration : underline;
+	}
+	.strategy_heading{
+		font-size : 1.25rem;
+		font-weight : 600;
+		text-shadow:0px 0px 5px #64b0ff,0px 0px 5px #64b0ff;
+	}	
+
+/****************************************************END****************************************************/
+}

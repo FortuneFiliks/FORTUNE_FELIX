@@ -1,0 +1,429 @@
+/****************************************************START****************************************************/	
+	*{
+		padding : 0;
+		margin : 0;
+		box-sizing : border-box;
+		
+	}
+	:root{
+		--pri_color :#002875;
+		--sec_color :#7a0632;
+		--bg_color :#eff6ff;
+		
+	}
+    body{
+    	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    	overflow-x : hidden;
+    }
+/******************************MOBILE MENU******************************/
+
+
+	.mobile_menu_section{
+        width : 100%;
+	    height : 100%;
+		margin-top : 65px;
+		background :#DBEAFF;
+		display : none;
+		position : fixed;
+		z-index :5;
+	}
+	.mobile_nav_item{
+		text-align : center;
+		padding : 7.5px 0 7.5px 0;
+	}
+	.mobile_nav_link{
+		font-weight : 700;
+		color : #223a66;
+		text-align : center;
+		font-size : 1.5rem;
+		cursor : pointer;
+	}	
+	
+	
+/*************************************TEXT ANIMATION*************************************/	
+	
+	
+    .char{
+        font-size: 4.5rem;
+        display: inline-block;
+        animation: an 1s ease-out 1 both;
+    	background : repeating-linear-gradient(to right,#AE8626,#F7EF8A,#D2AC47,#EDC967);
+    	-webkit-text-fill-color :transparent;
+		-webkit-background-clip : text;
+    	background-clip : text;	
+    }	
+	
+	
+	
+    .char_animated{
+        animation: an 1s ease-out 1 both;		
+    }
+
+
+    @keyframes an{
+        from{
+            opacity: 0;
+            transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+        }
+        to{
+            opacity: 1;
+            transform: perspective(500px) translate3d(0, 0, 0);
+        }
+    }
+	
+/******************************FIRST SECTION******************************/	
+    #first_section{
+        width : 100%;
+		min-height : auto;
+		/* min-height : 100vh; */
+		overflow-x : hidden;
+		background: #DBEAFF;
+		padding : 10rem 0.5rem 6rem 0.5rem;
+	}
+	
+	.first_section_content{
+		width : 100%;
+		min-height :0;
+		display : flex;
+		flex-direction : row;
+        align-items : center;		
+	}
+	
+	.first_section_heading{
+		font-weight : 700;
+		
+		color : #223a66;
+		font-size : 1.85rem;
+		margin : 0 0 0 15px;
+		width : 65%;
+		order : 2;
+		text-align : center;
+	}
+
+	
+	
+	
+	.background_image{
+		width : 100%;
+	}
+	
+	
+	.project_bullets{
+		
+		width : 35%;
+		background :  linear-gradient(60deg, #fb5b21,#7a0632);
+		height : 500px;
+		border-radius : 20px;
+		order : 1;
+	}
+	
+	.project_bullets_flex{
+		display : flex;
+		flex-direction : column;
+		color : #ffffff;
+		padding : 15px 0 0 0;
+	}
+	
+	.bullet_item{
+		display : flex;
+		flex-direction : column;
+		justify-content : center;
+		align-items : center;
+		margin : 15px 0 15px 0;
+	}
+	.bullet_item_heading{
+		font-weight : 600;
+		font-size : 1rem;
+		color : #eaebff;
+		text-align : center;
+	}
+	.bullet_item_text{
+		font-weight : 600;
+		font-size : 0.75rem;
+		color : #eaebff;
+		text-align : center;
+	}
+	
+	.website_btn{
+		outline : none;
+	    border : none;
+		background : #223a66;
+		color : #eaebff;
+		width : 100%;
+		height : 50px;
+		font-weight : 600;
+		font-size : 0.75rem;
+		display : flex;
+		align-items : center;
+		justify-content : center;
+		margin : 50px 0 0 0;
+		box-shadow : 1px 1px 3px 3px #3e3e3e4C;
+        border-radius : 5px;		
+		font-size : 1.15rem;
+	}
+	.website_btn:hover{
+		box-shadow : 1px 1px 3px 3px #3e3e3e4C;
+		outline : none;
+		background : #eaebff;
+		color : #223a66;		
+	}
+	
+/******************************SECOND SECTION******************************/	
+	#second_section{
+		width : 100%;
+		min-height : auto;
+        background : radial-gradient(#001F4A, #090f21);
+		color : #ffffff;
+        position : relative;
+		padding : 6rem 0 4rem 0;
+		overflow-x : hidden;
+	}
+	#second_section .second_section_content{
+		width : 100%;
+		
+	}
+	
+	
+	#second_section .second_section_flex{
+		width : 95%;
+		display : flex;
+		flex-direction : column;
+		margin-left : auto;
+		margin-right : auto;
+        font-size : 1rem;
+	}	
+	.second_section_flex_left_item{
+		width : 100%;
+		margin : 25px 0 25px 0;
+      
+		
+	}
+	.second_section_flex_right_item{
+		width : 100%;
+		margin : 25px 0 25px 0;
+		transform : translateX(40%);
+		opacity : 0;
+
+	}
+	
+	.second_section_img{
+		width : 100%;
+		transform : translateX(-20%);
+		opacity : 0;
+		display : none;
+	}
+	.second_section_img_min{
+		display : inline;		
+	}	
+
+	.component_heading{
+        font-size : 1.75rem;
+        font-weight : 700;
+        padding : 30px 0 0 0;		
+    }
+	.execution_phase{
+		width : 95%;
+		margin-left : auto;
+		margin-right : auto;
+        font-size : 1rem;
+	}
+
+   .strategy_grid{
+        width : 100%;
+        margin-left : auto;
+        margin-right : auto;
+        display : grid;
+        grid-template-columns : repeat(1, 1fr);
+        /* grid-auto-rows : 300px; */
+        border : solid 2px #eaebff;
+        padding : 15px 15px 15px 15px;
+    }
+    .strategy_grid>div{
+       padding : 15px;
+    }
+    .strategy_grid ul{
+        list-style-type : none;
+    }
+    .strategy_grid ul li{
+            padding : 7.5px 0 7.5px 0;
+    }
+    .website_img_item{
+        border-right :dashed 2px #eaebff;
+        border-left :none;
+        border-top :none;
+        border-bottom :dashed 2px #ffffff;
+    }
+
+    .website_text_item{
+        border-right : none;
+        border-left :dashed 2px #eaebff;
+        border-top :none;
+        border-bottom :dashed 2px #eaebff;
+    }
+    .sm_img_item{
+        border-left :dashed 2px #ffffff;
+        border-right :none;
+        border-bottom :none;
+        border-top :dashed 2px  #ffffff;
+    }
+
+    .sm_text_item{
+        border-left : none;
+        border-right :dashed 2px #eaebff;
+        border-bottom :none;
+        border-top :dashed 2px #ffffff;
+    }
+    .bullseye_icon{
+        width : 16px;
+        height : 16px;
+    }
+
+    .website_img, .sm_img{
+       width : 400px;
+    }
+    .second_section_bg_img{
+        position :absolute;
+        opacity : 0.05;
+        z-index : 0;
+    }
+    .second_section_img{
+        z-index : 100;
+    }
+	.result_section{
+		width : 95%;
+		margin-left : auto;
+		margin-right : auto; 
+        font-size : 1.13rem; 
+    }
+	.result_section ul li{
+		padding : 12.5px 0 12.5px 0;
+	}	
+
+/******************************VALIDATION SECTION******************************/	
+	
+	
+	
+	.validation_section{
+		width : 95%;
+		margin : 0 auto 0 auto;
+		color : #ffffff;
+	}
+	
+	.validation_section_headline{
+		font-size : 1.5rem;
+		font-weight : 700;
+		color : #ffffff;
+	}
+	.validation_flex{
+		width : 100%;
+		display : flex;
+		flex-direction : column;
+		gap : 50px;
+		justify-content : center;
+		align-items : center;
+		margin : 50px 0 50px 0;
+	}
+	
+	.validation_flex_left_item{
+		width : 100%;
+	}
+	
+	.validation_flex_right_item{
+		width : 100%;
+	}
+	
+	.validation_item_heading{
+		font-size : 1.25rem;
+		font-weight : 700;
+	}
+	
+	.validation_intro{
+		font-size : 1rem;
+		color : #f5f5f5B2;
+	}
+	
+	.validation_text{
+		font-size : 1.15rem;
+        line-height: 1.6;
+        margin: 20px 0;
+        padding-left: 20px;
+        border-left: 3px solid rgba(255,255,255,0.3);
+        font-style: italic;
+        color: #f5f5f5;		
+	}
+	
+	.whatsapp_proof_image{
+	    width : 100%;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 10px;
+        box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.3),
+    0 2px 6px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.02); /* subtle glass feel */
+        backdrop-filter: blur(2px);			
+	}
+
+    .whatsapp_proof_image:hover {
+      transform: translateY(-3px);
+      box-shadow: 
+        0 14px 30px rgba(0, 0, 0, 0.35),
+        0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }	
+
+    .whatsapp_proof_image_intro{
+       font-weight : 700;
+    }
+
+
+/******************************SECOND SECTION ANIMATION******************************/
+
+@keyframes second_section_img_animation{
+	from{
+		transform : translateX(-40%);
+		opacity : 0;
+		
+	}
+	to{
+		
+		transform : translateX(0);
+		opacity : 1;
+		
+	}
+	
+}
+
+.second_section_img_animation_class{
+    animation-name : second_section_img_animation;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;		
+	
+}
+
+
+
+
+@keyframes second_section_text_animation{
+	from{
+		transform : translateX(40%);
+		opacity : 0;
+	}
+	to{
+		
+		transform : translateX(0);
+		opacity : 1;
+		
+	}
+	
+}
+
+.second_section_text_animation_class{
+    animation-name : second_section_text_animation;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}	
+	
+	
+/****************************************************END****************************************************/  
+}
