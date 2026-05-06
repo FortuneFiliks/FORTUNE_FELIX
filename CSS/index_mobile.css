@@ -460,7 +460,7 @@
 	
 	.second_section .second_section_flex .left_flex_item{
 		color : #002875;
-		font-size : 1.25rem;
+		font-size : 1.12rem;
 		font-family : poppins;
 		font-weight : 400;
 		z-index : 2;
@@ -497,6 +497,11 @@
 	.second_section .red_flag_list{
 		list-style-type : none;
 	}
+
+	.second_section .red_flag_list{
+		list-style-type : none;
+	}		
+			
 	.second_section .red_flag{
 		width : 24px;
 		height : 24px;
