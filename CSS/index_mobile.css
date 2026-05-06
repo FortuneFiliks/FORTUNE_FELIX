@@ -498,8 +498,8 @@
 		list-style-type : none;
 	}
 
-	.second_section .red_flag_list{
-		list-style-type : none;
+	.red_flag_list>li{
+		padding : 7.5px 0 7.5px 0;
 	}		
 			
 	.second_section .red_flag{
