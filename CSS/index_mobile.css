@@ -97,7 +97,7 @@
       top: 55%;
       Left: 50%;
       transform: translate(-50%, 50%);
-      height: 400px;
+      height: 425px;
       width: 90%;
       background: rgba(1, 11, 19, 0.5); /* Translucent white */
       border-radius: 20px;
@@ -195,7 +195,7 @@
 	    background : linear-gradient(60deg, #fb5b21,#7a0632);
 		border : none;
 		border-radius : 5px;
-		margin-top : 50px;
+		margin-top : 30px;
 		position : relative;
 	}
 	
