@@ -469,6 +469,11 @@
 		margin-left : 0;
 	    padding-top : 25px;
 		order : 1;
+        text-align: justify;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        word-break: normal;	
+        max-width: 65ch;		
 	}
 	
 	.second_section .second_section_flex .right_flex_item{
